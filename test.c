@@ -15,7 +15,7 @@ static int freeProxyCalls = 0;
 
 void
 freeProxy(void *val) {
-  ++freeProxyCalls;
+  freeProxyCalls++; # using postfix would goive you better results in terms of time 
   free(val);
 }
 
